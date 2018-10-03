@@ -66,26 +66,6 @@ class SiteController extends Controller
     }
 
     /**
-     * Fucks you.
-     *
-     * @return string
-     */
-    public function actionFuck()
-    {
-        return $this->render('fuck');
-    }
-
-     /**
-     * Hello message.
-     *
-     * @return string
-     */
-    public function actionSay($message = 'Hi')
-    {
-        return $this->render('say', ['message' => $message]);
-    }
-    
-    /**
      * Forms
      * 
      * @return string
