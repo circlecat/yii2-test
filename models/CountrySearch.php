@@ -14,11 +14,12 @@ class CountrySearch extends Country
 {
     /**
      * {@inheritdoc}
+     * Function
      */
     public function rules()
     {
         return [
-            [['code', 'name'], 'safe'],
+            [['code', 'name', 'capital'], 'safe'],
             [['population'], 'integer'],
         ];
     }
@@ -63,7 +64,8 @@ class CountrySearch extends Country
         ]);
 
         $query->andFilterWhere(['like', 'code', $this->code])
-            ->andFilterWhere(['like', 'name', $this->name]);
+            ->andFilterWhere(['like', 'name', $this->name])
+            ->andFilterWhere(['like', 'capital', $this->capital]);
 
         return $dataProvider;
     }

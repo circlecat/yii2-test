@@ -16,6 +16,8 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'name')->textInput(['maxlength' => true]) ?>
 
+    <?= $form->field($model, 'capital')->textInput(['maxlength' => true]) ?>
+
     <?= $form->field($model, 'population')->textInput() ?>
 
     <div class="form-group">

@@ -18,6 +18,8 @@ use yii\widgets\ActiveForm;
     <?= $form->field($model, 'code') ?>
 
     <?= $form->field($model, 'name') ?>
+    
+    <?= $form->field($model, 'capital') ?>
 
     <?= $form->field($model, 'population') ?>
 
